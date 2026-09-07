@@ -19,7 +19,7 @@ const toKey = (value: string) => value.toLowerCase();
 ---
 
 <BaseLayout
-  title="Projects — Argensonix"
+  title="Projects · Argensonix"
   description="A selection of web, radio, design, tools and small systems built over the years by Argensonix."
 >
   <Header activePage="projects" />
@@ -195,12 +195,10 @@ const toKey = (value: string) => value.toLowerCase();
     max-width: 52ch;
   }
 
-  /* Decorative placeholder shape — larger, with a touch more presence */
+  /* Reserve the original space without a decorative placeholder. */
   .projects-intro__visual {
     width: clamp(180px, 22vw, 300px);
     aspect-ratio: 1;
-    border-radius: 50%;
-    background-color: color-mix(in srgb, var(--text-on-light) 12%, transparent);
   }
 
   /* ── Filters ───────────────────────────────────────────── */
